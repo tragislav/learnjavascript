@@ -8,7 +8,7 @@ function ucFirst(str) {
 
     return str[0].toUpperCase() + str.slice(1);
 }
-alert( ucFirst("вася") );
+alert(ucFirst("вася"));
 
 // Напишите функцию checkSpam(str), возвращающую true, если str содержит 'viagra' или 'XXX', а иначе false.
 function checkSpam(str) {
@@ -21,9 +21,9 @@ function checkSpam(str) {
     return false;
 }
 
-alert( checkSpam('buy ViAgRA now') );
-alert( checkSpam('free xxxxx') );
-alert( checkSpam("innocent rabbit") );
+alert(checkSpam('buy ViAgRA now'));
+alert(checkSpam('free xxxxx'));
+alert(checkSpam("innocent rabbit"));
 
 // Создайте функцию truncate(str, maxlength), которая проверяет длину строки str и, 
 // если она превосходит maxlength, заменяет конец str на "…", так, чтобы её длина стала равна maxlength.
@@ -36,11 +36,11 @@ function truncate(str, maxlength) {
     }
 }
 
-alert ( truncate("Вот, что мне хотелось бы сказать на эту тему:", 20) );
+alert(truncate("Вот, что мне хотелось бы сказать на эту тему:", 20));
 
 // Создайте функцию extractCurrencyValue(str), которая будет из такой строки выделять числовое значение и возвращать его.
 function extractCurrencyValue(str) {
     return +str.slice(1);
 }
 
-alert( extractCurrencyValue('$120') === 120 ); // true
+alert(extractCurrencyValue('$120') === 120); // true
