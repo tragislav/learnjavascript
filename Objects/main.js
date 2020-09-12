@@ -19,11 +19,11 @@ function isEmpty(obj) {
 
 let schedule = {};
 
-alert( isEmpty(schedule) ); // true
+alert(isEmpty(schedule)); // true
 
 schedule["8:30"] = "get up";
 
-alert( isEmpty(schedule) ); // false
+alert(isEmpty(schedule)); // false
 
 // Напишите код для суммирования всех зарплат и сохраните результат в переменной sum. Должно получиться 390.
 let salaries = {
@@ -46,7 +46,7 @@ let menu = {
     height: 300,
     title: "My menu"
 };
-  
+
 function multiplyNumeric(obj) {
     for (let key in obj) {
         if (typeof obj[key] == 'number') {

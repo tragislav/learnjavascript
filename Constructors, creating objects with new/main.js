@@ -2,16 +2,16 @@
 
 // Создание калькулятора при помощи конструктора
 function Calculator() {
-    this.read = function() {
-        this.a = +prompt('a = ','');
+    this.read = function () {
+        this.a = +prompt('a = ', '');
         this.b = +prompt('b = ', '');
     };
 
-    this.sum = function(){
+    this.sum = function () {
         return this.a + this.b;
     };
 
-    this.mul = function() {
+    this.mul = function () {
         return this.a * this.b;
     };
 }
@@ -19,14 +19,14 @@ function Calculator() {
 let calculator = new Calculator();
 calculator.read();
 
-alert( "Sum=" + calculator.sum() );
-alert( "Mul=" + calculator.mul() );
+alert("Sum=" + calculator.sum());
+alert("Mul=" + calculator.mul());
 
 // Напишите функцию-конструктор Accumulator(startingValue)
 function Accumulator(startingValue) {
     this.value = startingValue;
 
-    this.read = function() {
+    this.read = function () {
         this.value += +prompt('Введите значение которое мы прибавим к value', '')
     };
 }
